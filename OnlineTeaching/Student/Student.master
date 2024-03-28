@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Student.master.cs" Inherits="Student_Student" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+       
+    </asp:ContentPlaceHolder> <link href="Student.css" rel="stylesheet" type="text/css" />
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+    
+        <asp:Image ID="Image5" runat="server" Height="83px" ImageUrl="~/otstud.jpg" />
+    
+    </div>
+     <div id="mainn">
+         <div id="left">
+     <div id="leftmenu">
+         <table class="tbl">
+             <tr>
+                 <td>
+                     &nbsp;</td>
+             </tr>
+             <tr>
+                 <td style="text-align: center">
+                     <asp:Image ID="Image4" runat="server" Height="133px" Width="119px" />
+                 </td>
+             </tr>
+             <tr>
+                 <td style="text-align: center">
+                     <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="#660066"></asp:Label>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     &nbsp;</td>
+             </tr>
+             <tr>
+                 <td>
+                    <asp:Button ID="Button1" runat="server" CssClass="btnmenu" Text="Home" 
+                        PostBackUrl="~/Student/Main.aspx" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <asp:Button ID="Button4" runat="server" CssClass="btnmenu" Text="MY Profile" 
+                        PostBackUrl="~/Student/MyProfile.aspx" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <asp:Button ID="Button3" runat="server" CssClass="btnmenu" Text="MESSAGE" 
+                        PostBackUrl="~/Student/Message.aspx" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <asp:Button ID="Button5" runat="server" CssClass="btnmenu" Text="DOWNLOAD FILE" 
+                         PostBackUrl="~/Student/Download.aspx" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <asp:Button ID="Button8" runat="server" CssClass="btnmenu" Text="DOWNLOAD PDF" 
+                         PostBackUrl="~/Student/DownloadPdf.aspx" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <asp:Button ID="Button6" runat="server" CssClass="btnmenu" Text="PASSWORD" 
+                        PostBackUrl="~/Student/Password.aspx" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <asp:Button ID="Button7" runat="server" CssClass="btnmenu" Text="LOGOUT" 
+                        PostBackUrl="~/Default.aspx" />
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     &nbsp;</td>
+             </tr>
+         </table>
+         </div>
+     </div>
+     <div id="right">  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>    
+         </div>
+    </div> <div id="footer">© 2017 Student Attandance System. All Rights Reserved.</div>
+    </form>
+</body>
+</html>
